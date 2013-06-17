@@ -1,0 +1,119 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>body test</title>
+</head>
+
+	<style>
+		body {
+			width: 400px;
+			margin: auto;
+		}
+		.stats {
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+
+		.console {
+			font-family: monospace, sans-serif;
+		}
+		.to-top {
+			font-size: 1rem;
+		}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<script>
+
+		$(function(){
+
+			var updateConsole = function(e){
+
+				['html', 'body'].forEach(function(tag){
+				// $.each(['html', 'body'], function(i, tag){
+
+					$('#' + tag + ' .console').html(
+						tag + "<br>" + 
+						'height: ' + $(tag).height() + "<br>" +
+						'scrollTop: ' + $(tag).scrollTop()
+					);
+				});
+			};
+			updateConsole();
+
+			$(window).scroll(updateConsole);
+
+			$('#html-to-top').click(function(e){
+				$('html').animate({scrollTop: 0}, 1000);
+			});
+
+			$('#body-to-top').click(function(e){
+				$('body').animate({scrollTop: 0}, 1000);
+			});
+
+		});
+		
+
+
+	</script>
+	
+
+<body>
+
+
+	<div class="stats">
+		<div id="html">
+			<h1>html <a href="#" id='html-to-top' class='to-top'>html to top</a></h1>
+			<div class="console"></div>
+		</div>
+
+		<div id="body">
+			<h1>body <a href="#" id='body-to-top' class='to-top'>body to top</a></h1>
+			<div class="console"></div>
+		</div>	
+	</div>
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+	<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, harum amet consectetur minima dolorum sed accusamus debitis est? Blanditiis, ipsum reiciendis esse voluptas. Libero, impedit, rerum nisi odit sequi porro?</div>
+
+
+</body>
+</html>
